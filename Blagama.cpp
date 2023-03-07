@@ -1,6 +1,10 @@
-#include <iostream>
+#include "ChessBoard.hpp"
+
+using namespace Blagama;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    ChessBoard x;
+    x.Print();
+    x.Move(ChessPieceType::KNIGHT, 'c', 4);
 }
